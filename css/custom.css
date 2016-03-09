@@ -6,13 +6,6 @@ body {
     font-family: 'Lato', sans-serif;
     margin-bottom: 50px; /* bottom = footer height */
 }
-@media only screen and (min-width: 1200px){
-    body{
-        background-image: url("../images/background.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-}
 footer {
     position: absolute;
     bottom: 0;
@@ -41,4 +34,11 @@ header .container-fluid{
     color: white;
     padding: 0.5em;
     font-size: 1.2em;
+}
+@media only screen and (min-width: 1200px){
+    body{
+        background-image: url("../images/background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
