@@ -8,13 +8,7 @@ command -v sass >/dev/null 2>&1 || {
 
 # Define our paths and stylesheets
 echo "Re-compiling stylesheets..."
-cd wp-content/themes/grunwell2012/css/
+cd var/www/html/biking/css
 
-sass style.scss style.css --style compressed
-echo "style.scss -> style.css (compressed)"
-
-sass ie8.scss ie8.css --style compressed
-echo "ie8.scss -> ie8.css (compressed)"
-
-echo "Sassification is complete"
-exit 0
+sass site.scss site.css --style compressed
+echo "site.scss -> site.css (compressed)"
