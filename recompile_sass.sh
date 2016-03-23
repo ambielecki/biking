@@ -1,3 +1,5 @@
+# Code from https://stevegrunwell.com/blog/automatically-recompile-sass-upon-deployment-using-git-hooks/
+
 #!/bin/bash
 
 # Make sure that the 'sass' command exists (see http://stackoverflow.com/a/677212/329911)
