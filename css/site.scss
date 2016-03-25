@@ -13,6 +13,15 @@ $tertiary_color: #68b169;
     filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}');
 }
 
+//veritcal align mixin from http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+@mixin vertical-align($position: relative) {
+    position: $position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 /* Code from http://mystrd.at/modern-clean-css-sticky-footer/ for footer*/
 html {
     position: relative;
@@ -160,4 +169,16 @@ header .container-fluid{
 }
 #site_header a:hover{
     color: white;
+}
+
+footer a{
+    color:white;
+}
+
+footer a:hover{
+    color:white;
+}
+
+#footer_div{
+    @include vertical-align();
 }
