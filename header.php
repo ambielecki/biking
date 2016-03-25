@@ -1,6 +1,6 @@
 <header>
     <div class="container-fluid">
-        <div class="jumbotron bg-gradient" id="site_header"><h1>Biking on the North Shore of Boston</h1></div>
+        <div class="jumbotron bg-gradient" id="site_header"><a href="/"><h1>Biking on the North Shore of Boston</h1></a></div>
     </div>
 </header>
 <!-- Bootstrap nav -->
