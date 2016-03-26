@@ -1,4 +1,25 @@
-
+<?php if(isset($_SESSION['flash_error'])||isset($_SESSION['flash'])){?>
+    <div class="container-fluid">
+        <?php if(isset($_SESSION['flash_error'])){?>
+            <div class="row" id="flash_error">
+                <div class="col-sm-12">
+                    <?php echo($_SESSION['flash_error']);
+                    $_SESSION['flash_error'] = null;
+                    ?>
+                </div>
+            </div>
+        <?php } ?>
+        <?php if(isset($_SESSION['flash'])){?>
+            <div class="row" id="flash">
+                <div class="col-sm-12">
+                    <?php echo($_SESSION['flash']);
+                    $_SESSION['flash'] = null;
+                    ?>
+                </div>
+            </div>
+        <?php } ?>
+    </div>
+<?php } ?>
 <header>
     <div class="container-fluid">
         <div class="jumbotron bg-gradient" id="site_header"><a href="/"><h1>Biking on the North Shore of Boston</h1></a></div>
@@ -38,9 +59,21 @@
                     </ul>
                 </li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Login / Signup</a></li>
-            </ul>
+            <?php if(!isset($_SESSION['first_name'])){ ?>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Log In / Sign Up <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/login.php">Log In</a></li>
+                            <li><a href="/signup.php">Sign Up</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            <?php }else{ ?>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/logout.php">Hello <?php echo($_SESSION['first_name'])?> / Logout</a></li>
+                </ul>
+            <?php } ?>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>

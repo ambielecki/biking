@@ -1,0 +1,79 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Bielecki
+ * Date: 3/26/2016
+ * Time: 3:03 PM
+ */
+session_start();
+
+//check whether we are local or production and load config file from the correct location
+if($_SERVER['SERVER_NAME'] == 'biking.loc'){
+    include('/xampp/htdocs/school/biking/dbconfig.php');
+}else{
+    include('/var/www/html/biking/dbconfig.php');
+}
+
+//check if we have $_POST info
+if($_POST){
+    if($_POST['email']&&$_POST['password']){
+        //set url for redirect
+        $url = 'http://'.$_SERVER['SERVER_NAME'];
+        $login = $url.'/login.php';
+        //open db connection
+        $db = mysqli_connect(
+            $default_host, $default_user, $default_password, $default_db
+        );
+        if ($db->connect_errno) {
+            $_SESSION['flash_error'] = 'Database connection failed, error code: '.$db->connect_error;
+            header("Location: $login");
+        }else{
+            //minimally sanitize inputs for the db
+            $email = $db->real_escape_string($_POST['email']);
+            $password = $db->real_escape_string($_POST['password']);
+
+            //create the sql query to add a new user in the users table
+            $checkUser = "SELECT first_name, last_name, email, password FROM users where email= '$email' LIMIT 1";
+            //run the query
+            if(!$userQuery = $db->query($checkUser)){
+                //Query fails, flash message ad return to login page
+                $_SESSION['flash_error'] = 'There was a problem querying the database, please try again.';
+                mysqli_close($db);
+                header("Location: $login");
+            }else{
+                //close db connection
+                mysqli_close($db);
+
+                //get the row of data
+                $row = $userQuery->fetch_assoc();
+
+                //set user variable
+                $userFirst = $row['first_name'];
+                $userLast = $row['last_name'];
+                $userPassword = $row['password'];
+                $userEmail = $row['email'];
+
+                //check if there is an email returned
+                if(!$userEmail){
+                    $_SESSION['flash_error'] = 'Email not found, please try again.';
+                    header("Location: $login");
+                //verify entered password vs stored hash
+                }elseif(password_verify($password, $userPassword)){
+                    //set data to session
+                    $_SESSION['first_name'] = $userFirst;
+                    $_SESSION['last_name'] = $userLast;
+                    $_SESSION['email'] = $userEmail;
+                    $_SESSION['flash'] = 'Welcome back '.$userFirst.'!';
+                    //set the new header to go back to the homepage after logging in
+                    header("Location: $url");
+                //password does not verify, go back to login
+                }else{
+                    $_SESSION['flash_error'] = 'Password Incorrect, please try again.';
+                    header("Location: $login");
+                }
+            }
+        }
+    }
+}
+
+?>

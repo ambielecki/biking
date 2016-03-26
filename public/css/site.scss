@@ -182,3 +182,11 @@ footer a:hover{
 #footer_div{
     @include vertical-align();
 }
+#flash_error{
+    background-color: yellow;
+    color: red;
+}
+#flash{
+    background-color: $primary_color;
+    color: $primary_text;
+}
