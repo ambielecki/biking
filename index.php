@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Biking Around the North Shore</title>
-    <!-- Latest compiled and minified CSS -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/site.css">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- common css -->
+    <?php include '/templates/css.php'; ?>
+    <!-- page specific css -->
+
+    <!-- common js -->
+    <?php include '/templates/js_header.php'; ?>
 </head>
 <body>
-    <?php include 'header.php' ?>
+    <?php include '/templates/header.php'; ?>
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-3 hidden-sm hidden-xs">
@@ -43,6 +41,7 @@
             </div>
         </div>
     </div><!-- end container -->
-    <?php include 'footer.php' ?>
+    <?php include '/templates/footer.php'; ?>
+    <!-- page specific js -->
 </body>
 </html>
