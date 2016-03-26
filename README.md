@@ -40,3 +40,7 @@ User details are only contained in session variables, I'd need to implement clie
 *   Github webhook for SCSS compilation
     
     [Steve Grunwell](https://stevegrunwell.com/blog/automatically-recompile-sass-upon-deployment-using-git-hooks/)
+    
+*   Favicon
+
+    [Faviconshut](http://www.faviconshut.com)
