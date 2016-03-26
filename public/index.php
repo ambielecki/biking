@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <title>Biking Around the North Shore</title>
     <!-- common css -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/css.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/css.php'; ?>
     <!-- page specific css -->
 
     <!-- common js -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/js_header.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/js_header.php'; ?>
 </head>
 <body>
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/header.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/header.php'; ?>
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-3 hidden-sm hidden-xs">
@@ -41,7 +41,7 @@
             </div>
         </div>
     </div><!-- end container -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/footer.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/footer.php'; ?>
     <!-- page specific js -->
 </body>
 </html>
