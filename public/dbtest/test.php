@@ -6,7 +6,11 @@
  * Time: 9:36 AM
  */
 
-$link = mysqli_connect();
+$link = mysqli_connect(
+    ini_get("mysql.default.user"),
+    ini_get("mysql.default.password"),
+    ini_get("mysql.default.host")
+);
 
 if (!$link) {
     echo "Error: Unable to connect to MySQL." . PHP_EOL;
