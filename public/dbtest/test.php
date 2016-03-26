@@ -6,10 +6,10 @@
  * Time: 9:36 AM
  */
 
+include('/var/www/html/biking/dbconfig.php');
+
 $link = mysqli_connect(
-    ini_get("mysql.default.user"),
-    ini_get("mysql.default.password"),
-    ini_get("mysql.default.host")
+    $default_host, $default_user, $default_password, $default_db
 );
 
 if (!$link) {
