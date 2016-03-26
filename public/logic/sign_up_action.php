@@ -59,7 +59,6 @@ if($_POST){
                 header("Location: $url");
             }
         }
-
     }
 }
 
