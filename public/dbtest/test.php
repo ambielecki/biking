@@ -6,7 +6,11 @@
  * Time: 9:36 AM
  */
 
-include('/var/www/html/biking/dbconfig.php');
+if($_SERVER['SERVER_NAME'] == 'biking.loc'){
+    include('/xampp/htdocs/school/biking/dbconfig.php');
+}else{
+    include('/var/www/html/biking/dbconfig.php');
+}
 
 $link = mysqli_connect(
     $default_host, $default_user, $default_password, $default_db
