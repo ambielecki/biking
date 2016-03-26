@@ -1,0 +1,42 @@
+# Biking Around The North Shore of Boston
+
+## Live URL
+<http://cscie12.andrewbielecki.me>
+
+## Description
+A site describing some of the mountain biking and road biking around the North Shore and Metro West areas of Boston.
+
+## Details
+Login / Signup pages are implemented with PHP and a MySQL database. It's a pretty minimal proof of concept setup. 
+There's some server side validation and sanitization of inputs, but it would require a lot more work before really going live.
+User details are only contained in session variables, I'd need to implement client side cookies and a decent amount of code to make a remember me type function.
+
+## Outside code
+
+*   Bootstrap
+
+    [Getbootstrap](http://getbootstrap.com/)
+    
+*   FontAwesome
+
+    [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
+
+*   Footer CSS
+
+    [Modern Clean CSS "Sticky footer"](http://mystrd.at/modern-clean-css-sticky-footer/)
+    
+*   CSS Vertical Align
+
+    [Vertical align anything with just 3 lines of CSS](http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/)
+    
+*   Gradient Mixin
+
+    [Useful scss mixins (rounded corners, gradients, text-field, button)](https://gist.github.com/garyharan/957284)
+    
+*   Customized Navbar Colors for Bootstrap
+
+    [TWBSColor]( http://work.smarchal.com/twbscolor/)
+    
+*   Github webhook for SCSS compilation
+    
+    [Steve Grunwell](https://stevegrunwell.com/blog/automatically-recompile-sass-upon-deployment-using-git-hooks/)
