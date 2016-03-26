@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <title>Biking Around the North Shore</title>
     <!-- common css -->
-    <?php include '/templates/css.php'; ?>
+    <?php include 'templates/css.php'; ?>
     <!-- page specific css -->
 
     <!-- common js -->
-    <?php include '/templates/js_header.php'; ?>
+    <?php include 'templates/js_header.php'; ?>
 </head>
 <body>
-    <?php include '/templates/header.php'; ?>
+    <?php include 'templates/header.php'; ?>
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-3 hidden-sm hidden-xs">
@@ -41,7 +41,7 @@
             </div>
         </div>
     </div><!-- end container -->
-    <?php include '/templates/footer.php'; ?>
+    <?php include 'templates/footer.php'; ?>
     <!-- page specific js -->
 </body>
 </html>
