@@ -13,7 +13,7 @@ if($_SERVER['SERVER_NAME'] == 'biking.loc'){
     include('/xampp/htdocs/school/biking/dbconfig.php');
 }else{
     require('/var/www/html/biking/vendor/autoload.php');
-    include('/var/www/html/biking/site_logic/login.php');
+    include('/var/www/html/biking/dbconfig.php');
 }
 
 $lang = 'en';
