@@ -15,16 +15,10 @@
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/header.php'; ?>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-3 hidden-sm hidden-xs">
-                <aside id="aside_left">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique vel nisl a gravida. Maecenas id blandit mauris, sed imperdiet urna. Fusce eu sodales magna, sit amet tempor magna. Suspendisse ornare eleifend venenatis. Curabitur sed justo et lectus tincidunt condimentum. Sed consectetur massa leo, nec mattis sem consectetur in. Nunc libero velit, auctor sed ipsum a, sollicitudin venenatis sem. Phasellus risus metus, pretium sit amet malesuada et, mattis non risus. Sed a sem odio. Etiam felis velit, rhoncus et sapien vitae, lobortis sodales sapien. Curabitur dictum sem at justo lobortis sodales. Phasellus pharetra dignissim dignissim.
-                    </p>
-                </aside>
-            </div>
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/asides/left_aside.php' ?>
             <div class="col-sm-6" id="main_content">
                 <div class="row">
-                    <form class="form-horizontal" method="post" action="/logic/sign_up_action.php">
+                    <form class="form-horizontal" method="post" action="/logic/signup_action.php">
                         <div class="form-group">
                             <label for="first_name" class="col-sm-4 control-label">First Name:</label>
                             <div class="col-sm-7">
@@ -63,13 +57,7 @@
                     </form>
                 </div>
             </div>
-            <div class="col-sm-3">
-                <aside id="aside_right">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique vel nisl a gravida. Maecenas id blandit mauris, sed imperdiet urna. Fusce eu sodales magna, sit amet tempor magna. Suspendisse ornare eleifend venenatis. Curabitur sed justo et lectus tincidunt condimentum. Sed consectetur massa leo, nec mattis sem consectetur in. Nunc libero velit, auctor sed ipsum a, sollicitudin venenatis sem. Phasellus risus metus, pretium sit amet malesuada et, mattis non risus. Sed a sem odio. Etiam felis velit, rhoncus et sapien vitae, lobortis sodales sapien. Curabitur dictum sem at justo lobortis sodales. Phasellus pharetra dignissim dignissim.
-                    </p>
-                </aside>
-            </div>
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/asides/right_aside.php' ?>
         </div>
     </div><!-- end container -->
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/footer.php'; ?>

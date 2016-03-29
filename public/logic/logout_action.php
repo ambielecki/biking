@@ -6,10 +6,8 @@
  * Time: 6:49 PM
  */
 session_start();
-
-session_unset();
-$url = $_SERVER['HTTP_REFERER'];
-
-$_SESSION['flash'] = 'You have been logged out, please come back soon.';
-
-header("Location: $url");
+if($_SERVER['SERVER_NAME'] == 'biking.loc'){
+    include('/xampp/htdocs/school/biking/site_logic/logout.php');
+}else{
+    include('/var/www/html/biking/site_logic/logout.php');
+}

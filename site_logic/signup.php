@@ -2,17 +2,9 @@
 /**
  * Created by PhpStorm.
  * User: Bielecki
- * Date: 3/26/2016
- * Time: 10:50 AM
+ * Date: 3/28/2016
+ * Time: 1:16 PM
  */
-session_start();
-//check whether we are local or production and load config file from the correct location
-if($_SERVER['SERVER_NAME'] == 'biking.loc'){
-    include('/xampp/htdocs/school/biking/dbconfig.php');
-}else{
-    include('/var/www/html/biking/dbconfig.php');
-}
-
 //check if we have $_POST info
 if($_POST){
     if($_POST['first_name']&&$_POST['last_name']&&$_POST['email']&&$_POST['password']&&($_POST['password']===$_POST['password_confirmation'])){
@@ -61,5 +53,3 @@ if($_POST){
         }
     }
 }
-
-?>
