@@ -21,6 +21,22 @@ User details are only contained in session variables, I'd need to implement clie
 *   FontAwesome
 
     [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
+    
+*   Weather Icons
+
+    [Weather Icons](https://erikflowers.github.io/weather-icons/)
+    
+*   OpenWeatherMap
+
+    [OpenWeatherMap](http://openweathermap.org/)
+    
+*   OpenWeatherMap PHP API
+
+    [cmfcmf/OpenWeatherMap-PHP-API](https://github.com/cmfcmf/OpenWeatherMap-PHP-Api)
+    
+*   Composer - for loading PHP packages
+
+    [Composer](https://getcomposer.org/)
 
 *   Footer CSS
 

@@ -20,6 +20,15 @@
         <h3>Local Parks</h3>
         <ul>
             <li><a href="http://www.mass.gov/eea/agencies/dcr/massparks/region-north/middlesex-fells-reservation.html">Middlesex Fells</a></li>
+            <li><a href="http://www.cityoflynn.net/citydepartments_lynnwoods.shtml">Lynn Woods</a></li>
+            <li><a href="http://www.mass.gov/eea/agencies/dcr/massparks/region-north/willowdale-state-forest.html">Willowdale State Park</a></li>
+            <li><a href="http://www.mass.gov/eea/agencies/dcr/massparks/region-north/harold-parker-state-forest.html">Harold Parker State Forest</a></li>
+        </ul>
+        <h3>Bike Trails</h3>
+        <ul>
+            <li><a href="http://minutemanbikeway.org/">Minuteman Bikeway</a></li>
+            <li><a href="http://www.biketothesea.com/">Bike to the Sea</a></li>
+            <li><a href="http://www.mass.gov/eea/agencies/dcr/massparks/region-boston/charles-river-reservation.html">Charles River Reservation</a></li>
         </ul>
     </aside>
 </div>

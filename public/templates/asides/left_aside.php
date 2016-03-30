@@ -6,11 +6,13 @@ https://github.com/cmfcmf/OpenWeatherMap-PHP-Api, the package is installed with 
 use Cmfcmf\OpenWeatherMap;
 use Cmfcmf\OpenWeatherMap\Exception as OWMException;
 
+//config locally
 if($_SERVER['SERVER_NAME'] == 'biking.loc'){
     //autoload for the weather api
     require('/xampp/htdocs/school/biking/vendor/autoload.php');
     //my config file holding the API Key
     include('/xampp/htdocs/school/biking/dbconfig.php');
+//production config
 }else{
     require('/var/www/html/biking/vendor/autoload.php');
     include('/var/www/html/biking/dbconfig.php');
