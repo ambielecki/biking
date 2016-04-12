@@ -66,6 +66,9 @@ session_start();?>
                                 <a href="/documents/fells.pdf">PDF Trail Map from DCR <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-sm-12 map" id="fells_map"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -74,6 +77,10 @@ session_start();?>
     </div><!-- end container -->
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/footer.php'; ?>
     <!-- page specific js -->
+    <script type="text/javascript" src="/js/fells.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAzpAc4TMsByW-AB3RACV6oP58h8-WGYE&callback=initMap">
+    </script>
     </body>
     </html>
 
