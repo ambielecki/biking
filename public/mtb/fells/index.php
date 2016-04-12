@@ -66,6 +66,7 @@ session_start();?>
                                 <a href="/documents/fells.pdf">PDF Trail Map from DCR <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
                             </div>
                         </div>
+                        <hr>
                         <div class="row">
                             <div class="col-sm-12 map_wrapper" >
                                 <div class="map_div" id="fells_map"></div>
