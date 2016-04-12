@@ -3,7 +3,7 @@
  */
 function initMap() {
     var fells = new google.maps.Map(document.getElementById('fells_map'), {
-        center: {lat: 42.451911, lng: -71.101495},
-        zoom: 14
+        center: {lat: 42.451911, lng: -71.101838},
+        zoom: 13
     });
 }
