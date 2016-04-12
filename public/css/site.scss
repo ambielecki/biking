@@ -206,7 +206,16 @@ footer a, footer a:hover{
 hr{
     border-top-color: black;
 }
-.map {
-    width: 250px;
-    height: 250px;
+.map_wrapper {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.map_div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }

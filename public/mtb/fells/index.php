@@ -67,7 +67,9 @@ session_start();?>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-12 map" id="fells_map"></div>
+                            <div class="col-sm-12 map_wrapper" >
+                                <div class="map_div" id="fells_map"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
