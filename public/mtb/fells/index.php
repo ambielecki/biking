@@ -62,7 +62,11 @@ session_start();?>
                     <div class="col-sm-4">
                         <div class="row">
                             <div class="col-sm-12">
-                                <a href="/images/fellsmap.jpg"><img src="/images/small/fellsmap_small.jpg" class="img-responsive" alt="Map of Middlesex Fells"></a><br>
+                                <a href="/images/fellsmap.jpg"><img src="/images/small/fellsmap_small.jpg" class="img-responsive" alt="Map of Middlesex Fells"></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
                                 <a href="/documents/fells.pdf">PDF Trail Map from DCR <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
                             </div>
                         </div>
@@ -70,6 +74,11 @@ session_start();?>
                         <div class="row">
                             <div class="col-sm-12 map_wrapper" >
                                 <div class="map_div" id="fells_map"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a href="https://www.google.com/maps/dir//42.4515753,-71.1048641/@42.4501524,-71.1241746,13.75z?hl=en">Directions to Sheepsfold Entrance</a>
                             </div>
                         </div>
                     </div>
