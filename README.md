@@ -8,8 +8,8 @@ A site describing some of the mountain biking and road biking around the North S
 
 ## Details
 Login / Signup pages are implemented with PHP and a MySQL database, so that won't work locally unless you want to set up a dbconfig.php 
-(it's not in version control as the setting are different locally and in production). It's a pretty minimal proof of concept setup. 
-There's some server side validation and sanitization of inputs, but it would require a lot more work before really going live.
+(it's not in version control as the setting are different locally and in production) and a MySQL DB (I provided SQL scripts in the zip to setup the tables).
+ It's a pretty minimal proof of concept setup. There's some server side validation and sanitization of inputs, but it would require a lot more work before really going live.
 User details are only contained in session variables, I'd need to implement client side cookies and a decent amount of code to make a remember me type function.
 
 ## Outside code
@@ -48,7 +48,7 @@ User details are only contained in session variables, I'd need to implement clie
     
 *   Gradient Mixin
 
-    [Useful scss mixins (rounded corners, gradients, text-field, button)](https://gist.github.com/garyharan/957284)
+    [Useful scss mixins(rounded corners, gradients, text-field, button)](https://gist.github.com/garyharan/957284)
     
 *   Customized Navbar Colors for Bootstrap
 
@@ -58,6 +58,6 @@ User details are only contained in session variables, I'd need to implement clie
     
     [Steve Grunwell](https://stevegrunwell.com/blog/automatically-recompile-sass-upon-deployment-using-git-hooks/)
     
-*   Favicon
+*   Biking Favicon
 
     [Faviconshut](http://www.faviconshut.com)

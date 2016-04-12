@@ -16,7 +16,7 @@
 <div class="container-fluid">
     <div class="row">
         <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/asides/left_aside.php' ?>
-        <div class="col-sm-6" id="main_content">
+        <div class="col-sm-8" id="main_content">
 
 
             <!-- Content -->

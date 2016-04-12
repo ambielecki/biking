@@ -32,7 +32,7 @@ try {
     echo 'General exception: ' . $e->getMessage() . ' (Code ' . $e->getCode() . ').';
 }
 ?>
-<div class="col-sm-3 hidden-sm hidden-xs">
+<div class="col-sm-2 hidden-sm hidden-xs">
     <aside id="aside_left">
         <p>
             <?php echo $weather->temperature ?>

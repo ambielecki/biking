@@ -16,7 +16,7 @@
     <div class="container-fluid">
         <div class="row">
             <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/asides/left_aside.php' ?>
-            <div class="col-sm-6" id="main_content">
+            <div class="col-sm-8" id="main_content">
                 <div class="row">
                     <form class="form-horizontal" method="post" action="/logic/signup_action.php">
                         <div class="form-group">
@@ -49,8 +49,17 @@
                                 <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="Confirm Password">
                             </div>
                         </div>
+                        <?php if(isset($_SESSION['formWarning'])){?>
+                            <div class="row">
+                                <div class="col-sm-offset-4 col-sm-8">
+                                    <span class="text-danger">Please ensure all fields are filled and passwords match.</span>
+                                </div>
+                            </div>
+                        <?php }
+                            unset($_SESSION['formWarning']);
+                        ?>
                         <div class="form-group">
-                            <div class="col-sm-offset-4 col-sm-10">
+                            <div class="col-sm-offset-4 col-sm-8">
                                 <button type="submit" class="btn btn-default">Sign Up!</button>
                             </div>
                         </div>

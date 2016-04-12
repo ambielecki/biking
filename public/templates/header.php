@@ -1,25 +1,27 @@
-<?php if(isset($_SESSION['flash_error'])||isset($_SESSION['flash'])){?>
-    <div class="container-fluid">
-        <?php if(isset($_SESSION['flash_error'])){?>
-            <div class="row" id="flash_error">
-                <div class="col-sm-12">
-                    <?php echo($_SESSION['flash_error']);
-                    $_SESSION['flash_error'] = null;
-                    ?>
+<?php //check for flash messages
+    if(isset($_SESSION['flash_error'])||isset($_SESSION['flash'])){?>
+        <div class="container-fluid">
+            <?php if(isset($_SESSION['flash_error'])){?>
+                <div class="row" id="flash_error">
+                    <div class="col-sm-12">
+                        <?php echo($_SESSION['flash_error']);
+                        unset($_SESSION['flash_error']);
+                        ?>
+                    </div>
                 </div>
-            </div>
-        <?php } ?>
-        <?php if(isset($_SESSION['flash'])){?>
-            <div class="row" id="flash">
-                <div class="col-sm-12">
-                    <?php echo($_SESSION['flash']);
-                    $_SESSION['flash'] = null;
-                    ?>
+            <?php } ?>
+            <?php if(isset($_SESSION['flash'])){?>
+                <div class="row" id="flash">
+                    <div class="col-sm-12">
+                        <?php
+                            echo($_SESSION['flash']);
+                            unset($_SESSION['flash']);
+                        ?>
+                    </div>
                 </div>
-            </div>
-        <?php } ?>
-    </div>
-<?php } ?>
+            <?php } ?>
+        </div>
+<?php }/* Close flash message block*/ ?>
 <header>
     <div class="container-fluid">
         <div class="jumbotron bg-gradient" id="site_header"><a href="/"><h1>Biking on the North Shore of Boston</h1></a></div>
@@ -45,7 +47,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mountain Biking <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/mtb.php">Middlesex Fells</a></li>
+                        <li><a href="/mtb/fells/">Middlesex Fells</a></li>
                         <li><a href="#">Lynn Woods</a></li>
                         <li><a href="#">Willowdale</a></li>
                     </ul>
