@@ -52,7 +52,7 @@
                         <li><a href="#">Willowdale</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Road Biking</a></li>
+                <li><a href="/road/">Road Biking</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span></a>
                     <ul class="dropdown-menu">

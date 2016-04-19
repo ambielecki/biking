@@ -9,3 +9,4 @@
         </div>
     </div>
 </footer>
+<script type="text/javascript" src="/js/site.js"></script>

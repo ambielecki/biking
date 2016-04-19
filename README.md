@@ -61,3 +61,7 @@ User details are only contained in session variables, I'd need to implement clie
 *   Biking Favicon
 
     [Faviconshut](http://www.faviconshut.com)
+    
+*   totalprogUS - js snippet to set a active in bootstrap nav
+
+    [totalprogUS](http://totalprogus.blogspot.com.br/2013/12/bootstrap-add-active-class-to-li.html)
