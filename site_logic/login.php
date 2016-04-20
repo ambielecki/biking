@@ -4,7 +4,7 @@ if ($_POST) {
     if ($_POST['email'] && $_POST['password']) {
         //set url for redirect
         $url = 'http://' . $_SERVER['SERVER_NAME'];
-        $login = $url . '/login.php';
+        $login = $url . '/login';
         //open db connection
         $db = mysqli_connect(
             $default_host, $default_user, $default_password, $default_db

@@ -1,1 +1,5 @@
 Redirect "/mtb/fells" "/mtb/fells.php"
+Redirect "/login" "/login.php"
+Redirect "/signup" "/signup.php"
+Redirect "/logout" "/logic/logout_action.php"
+Redirect "/road" "/road.php"

@@ -9,16 +9,9 @@
 session_start();?>
     <!DOCTYPE html>
     <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Biking Around Boston - Test</title>
-        <!-- common css -->
-        <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/css.php'; ?>
-        <!-- page specific css -->
-
-        <!-- common js -->
-        <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/js_header.php'; ?>
-    </head>
+    <?php $title = 'Middlesex Fells'?>
+    <?php $css = ''?>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/htmlheader.php';?>
     <body>
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/header.php'; ?>
     <div class="container-fluid">
@@ -31,7 +24,7 @@ session_start();?>
                         <p>The Middlesex Fells Reservation sits just outside the city of Boston, located in the towns of Malden, Medford, Stoneham, Melrose, and Winchester.
                         The Reservation is one of the largest parks in the Boston Metro area, and it's 2,575 acres are full of biking and hiking trails.  Due to the proximity
                         to the city, the Fells sees heavy use by a wide variety of interest groups, not all whom are necessarily aligned</p>
-                        <p>Historically there has been tension between Mountain Bikers and groups such as the <a href="www.friendsofthefells.org">Friends of the Fells</a>, though
+                        <p>Historically there has been tension between Mountain Bikers and groups such as the <a href="http://www.friendsofthefells.org">Friends of the Fells</a>, though
                         they have taken a less harsh stance towards biking recently.  Still, it is important to be respectful of all trail users and stay on the allowed trails to help
                         maintain our access to this park.</p>
                         <hr>

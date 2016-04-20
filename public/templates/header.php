@@ -52,7 +52,7 @@
                         <li><a href="#">Willowdale</a></li>
                     </ul>
                 </li>
-                <li><a href="/road/">Road Biking</a></li>
+                <li><a href="/road">Road Biking</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -66,14 +66,14 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Log In / Sign Up <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="/login.php">Log In</a></li>
-                            <li><a href="/signup.php">Sign Up</a></li>
+                            <li><a href="/login">Log In</a></li>
+                            <li><a href="/signup">Sign Up</a></li>
                         </ul>
                     </li>
                 </ul>
             <?php }else{ ?>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/logic/logout_action.php">Hello <?php echo($_SESSION['first_name'])?> / Logout</a></li>
+                    <li><a href="/logout">Hello <?php echo($_SESSION['first_name'])?> / Logout</a></li>
                 </ul>
             <?php } ?>
         </div><!-- /.navbar-collapse -->
