@@ -39,8 +39,9 @@ if($_POST){
                 $password = password_hash($pwd, PASSWORD_DEFAULT);
 
                 //create the sql query to add a new user in the users table
-                $newUser = "INSERT INTO users (first_name, last_name, email, password)
-                  VALUES ('$first_name', '$last_name', '$email', '$password')";
+                //user levels 0-superAdmin 1-admin 2-confirmed user 3-unconfirmed user
+                $newUser = "INSERT INTO users (first_name, last_name, email, password, level)
+                  VALUES ('$first_name', '$last_name', '$email', '$password', 2)";
 
                 //run the query
                 if(!$db->query($newUser)){
