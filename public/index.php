@@ -4,7 +4,7 @@
 <?php $title = 'Biking Around Boston'?>
 <?php $css = ''?>
 <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/htmlheader.php';?>
-<body>
+<body id="home">
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/header.php'; ?>
     <div class="container-fluid" id="content_container">
         <div class="row">

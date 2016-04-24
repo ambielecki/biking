@@ -14,3 +14,6 @@ cd /var/www/html/biking/public/css
 
 sass site.scss site.css --style compressed
 echo "site.scss -> site.css (compressed)"
+sass meetup.scss meetup.css --style compressed
+echo "meetup.scss -> meetup.css (compressed)"
+

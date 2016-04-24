@@ -29,7 +29,7 @@ if ($_POST) {
                 $password = $db->real_escape_string($_POST['password']);
 
                 //create the sql query to add a new user in the users table
-                $checkUser = "SELECT first_name, last_name, email, password FROM users where email= '$email' LIMIT 1";
+                $checkUser = "SELECT id, first_name, last_name, email, password FROM users where email= '$email' LIMIT 1";
 
                 //run the query
                 if (!$userQuery = $db->query($checkUser)) {
@@ -51,6 +51,7 @@ if ($_POST) {
                     $userLast = $row['last_name'];
                     $userPassword = $row['password'];
                     $userEmail = $row['email'];
+                    $userId = $row['id'];
 
                     //check if there is an email returned
                     if (!$userEmail) {
@@ -64,6 +65,7 @@ if ($_POST) {
                         $_SESSION['first_name'] = $userFirst;
                         $_SESSION['last_name'] = $userLast;
                         $_SESSION['email'] = $userEmail;
+                        $_SESSION['id'] = $userId;
                         $_SESSION['flash'] = 'Welcome back '.$userFirst.'!';
 
                         //set the new header to go back to the homepage after logging in

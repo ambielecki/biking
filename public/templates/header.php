@@ -38,7 +38,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">Home</a>
+            <a class="navbar-brand" href="/" id="nav_home">Home</a>
         </div><!-- end no collapse area -->
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="llnavbar">
@@ -57,7 +57,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Planned Events</a></li>
-                        <li><a href="#">Meetup / Social</a></li>
+                        <li><a href="/meetup">Meetup / Social</a></li>
                     </ul>
                 </li>
             </ul>
