@@ -62,16 +62,16 @@ if($_SERVER['SERVER_NAME'] == 'biking.loc'){
                     </div>
                     <div class="col-sm-2">
                         <?php if(isset($_SESSION['id']) && $result['going']){ ?>
-                            <form id="setattendance" method="post">
-                                <input type="hidden" id="attending" value="true">
-                                <input type="hidden" id="event_id" value="<?php echo $result['event_id']; ?>">
-                                <input type="button" class="btn btn-default" id="attend_btn" value="I can't go">
+                            <form method="post" action="/logic/meet_status.php">
+                                <input type="hidden" name="attending" value=0>
+                                <input type="hidden" name="event_id" value="<?php echo $result['event_id']; ?>">
+                                <input type="submit" class="btn btn-default attend_btn" value="I can't go">
                             </form>
                         <?php }elseif(isset($_SESSION['id'])){?>
-                            <form id="setattendance" method="post">
-                                <input type="hidden" id="attending" value="false">
-                                <input type="hidden" id="event_id" value="<?php echo $result['event_id']; ?>">
-                                <input type="button" class="btn btn-default" id="attend_btn" value="Count Me In!">
+                            <form method="post" action="/logic/meet_status.php">
+                                <input type="hidden" name="attending" value=1>
+                                <input type="hidden" name="event_id" value="<?php echo $result['event_id']; ?>">
+                                <input type="submit" class="btn btn-default attend_btn" value="Count Me In!">
                             </form>
                         <?php } ?>
                     </div>

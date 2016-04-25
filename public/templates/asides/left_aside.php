@@ -38,29 +38,31 @@ try {
             <div class="col-sm-12">
                 <h4>Current Boston Weather</h4>
             </div>
-        </div>
-        <div class="row">
-            <i id="w_icon" class="col-sm-12 text-center wi"></i>
         </div><br>
-        <div class="row">
-            <div class="col-sm-6">Temperature: </div>
-            <div class="col-sm-6" id="w_temp"><?php echo $weather->temperature ?></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">Wind Speed:  </div>
-            <div class="col-sm-6" id="w_wind_speed"><?php echo $weather->wind->speed ?></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">Direction: </div>
-            <div class="col-sm-6" id="w_wind_direction"><?php echo $weather->wind->direction->getDescription() ?></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">Cloud Cover: </div>
-            <div class="col-sm-6" id="w_clouds"><?php echo $weather->clouds->getDescription() ?></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">Precipitation: </div>
-            <div class="col-sm-6" id="w_precip"><?php echo $weather->precipitation->getDescription() ?></div>
-        </div>
+        <?php if($weather){?>
+            <div class="row">
+                <i id="w_icon" class="col-sm-12 text-center wi"></i>
+            </div><br>
+            <div class="row">
+                <div class="col-sm-6">Temperature: </div>
+                <div class="col-sm-6" id="w_temp"><?php echo $weather->temperature; ?></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">Wind Speed:  </div>
+                <div class="col-sm-6" id="w_wind_speed"><?php echo $weather->wind->speed; ?></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">Direction: </div>
+                <div class="col-sm-6" id="w_wind_direction"><?php echo $weather->wind->direction->getDescription(); ?></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">Cloud Cover: </div>
+                <div class="col-sm-6" id="w_clouds"><?php echo $weather->clouds->getDescription(); ?></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">Precipitation: </div>
+                <div class="col-sm-6" id="w_precip"><?php echo $weather->precipitation->getDescription(); ?></div>
+            </div>
+        <?php }else { echo "Weather currently unavailable"; } ?>
     </aside>
 </div>

@@ -30,8 +30,14 @@ $(document).ready(function() {
             case "rain":
                 w_class = 'wi-rain';
                 break;
+            case "overcast clouds":
+                w_class = 'wi-cloudy';
+                break;
+            case "broken clouds":
+                w_class = 'wi-cloud';
+                break;
             default:
-                w_class = '';
+                w_class = 'wi-na';
                 break;
         }
         //add new class to w_icon div

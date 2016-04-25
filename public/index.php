@@ -10,15 +10,26 @@
         <div class="row">
             <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/asides/left_aside.php' ?>
             <div class="col-sm-8" id="main_content">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique vel nisl a gravida. Maecenas id blandit mauris, sed imperdiet urna. Fusce eu sodales magna, sit amet tempor magna. Suspendisse ornare eleifend venenatis. Curabitur sed justo et lectus tincidunt condimentum. Sed consectetur massa leo, nec mattis sem consectetur in. Nunc libero velit, auctor sed ipsum a, sollicitudin venenatis sem. Phasellus risus metus, pretium sit amet malesuada et, mattis non risus. Sed a sem odio. Etiam felis velit, rhoncus et sapien vitae, lobortis sodales sapien. Curabitur dictum sem at justo lobortis sodales. Phasellus pharetra dignissim dignissim.
-                </p>
-                <p>
-                    Cras cursus neque lectus, vitae lacinia nibh malesuada quis. Suspendisse ut sapien lectus. Suspendisse egestas odio eu arcu eleifend, eu tristique tellus venenatis. Phasellus sollicitudin lobortis turpis, nec cursus massa lobortis ac. Integer porta consequat ex. Nunc et leo rhoncus urna egestas scelerisque eget vel quam. Suspendisse vehicula suscipit tortor at pellentesque. Fusce velit augue, hendrerit in purus in, porta porta mauris. In rhoncus auctor turpis eget pretium. Pellentesque dolor eros, porttitor quis laoreet vel, molestie quis orci.
-                </p>
-                <p>
-                    Suspendisse nec nulla lorem. Aliquam pretium nibh tempus, pharetra lorem nec, sodales nibh. Sed eget eleifend nulla. Suspendisse vitae iaculis turpis, vel pharetra tellus. Suspendisse erat dui, ullamcorper ac egestas sit amet, congue ut erat. Suspendisse malesuada sit amet metus vitae mollis. Fusce viverra arcu non tortor ultrices, vel semper nibh blandit. Duis ut libero vel mauris dictum dignissim ut a nulla. Etiam tempus nec augue ut aliquam.
-                </p>
+                <div class="row">
+                    <div class="col-sm-7">
+                        For an area not far Boston poper, the North Shore and Metro West offer a wealth of both road biking and mountain biking opportunities.  You don't need to travel far outside of the city to find numerous parks for off road adventures and miles and miles of road biking.
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a href="/images/full/fells_bridge.jpg"><img src="/images/500px/fells_bridge.jpg" class="img-responsive" alt="Railroad Bridge in Middlesex Fells" Title="Railroad Bridge in Middlesex Fells">
+                                </a>
+                                <h5>A light rail bridge in the Middlesex Fells.</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a href="/images/full/deer_island.jpg"><img src="/images/500px/deer_island.jpg" class="img-responsive" alt="View of Boston from Deer Island" Title="Boston Skyline from Deer Island"></a>
+                                <h5>The Boston Skyline from Deer Island.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/asides/right_aside.php' ?>
         </div>
