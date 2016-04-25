@@ -179,6 +179,12 @@ header .container-fluid{
     display: block;
     color: white;
 }
+#aside_left a{
+    color:white;
+}
+.attribution{
+    font-size: 0.7em;
+}
 @media only screen and (min-width: 1200px){
     body{
         background-image: url("../images/background.jpg");
