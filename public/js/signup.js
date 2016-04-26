@@ -2,7 +2,7 @@
  * Created by Bielecki on 4/26/2016.
  */
 $(document).ready(function(){
-    //validate form wiht id simple_form
+    //chose id to validate form
     $('#signup_form').validate({
         //set the error class to bootstrap class
         errorClass:"text-danger",
