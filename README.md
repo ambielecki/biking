@@ -14,8 +14,7 @@ User details are only contained in session variables, I'd need to implement clie
 configure usernames for something like this, but in reality I would use a framework to make this app in a real world scenario, and that's a lot of effort to make sure things aren't 
 being duplicated.
 
-Signing up sets you to an unconfirmed user level, so you would not be able to directly post meetup events (though you can indicate that you are going). I have created at confirmed
-test user to try that feature
+I have not implemented adding new meetups on the meetup page yet, but meetups from the DB are displayed and if a user is logged in they can indicate whether they are interested in going or not.  Just hit the limit of how much php I want to write for interacting with the DB without a framework.
  
 login: test@user.com
 pwd: foobarfizzbuzz

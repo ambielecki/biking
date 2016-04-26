@@ -11,7 +11,7 @@
             <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/asides/left_aside.php' ?>
             <div class="col-sm-8" id="main_content">
                 <div class="row">
-                    <form class="form-horizontal" method="post" action="/logic/signup_action.php">
+                    <form class="form-horizontal" method="post" action="/logic/signup_action.php" id="signup_form">
                         <div class="form-group">
                             <label for="first_name" class="col-sm-4 control-label">First Name:</label>
                             <div class="col-sm-7">
@@ -62,6 +62,8 @@
             <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/asides/right_aside.php' ?>
         </div>
     </div><!-- end container -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+    <script src="js/signup.js"></script>
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/footer.php'; ?>
 <!-- page specific js -->
 </body>
