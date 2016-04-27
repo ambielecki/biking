@@ -1,4 +1,6 @@
+Options +FollowSymLinks
 RewriteEngine On
+
 Redirect /mtb/fells /mtb/fells.php
 Redirect /login /login.php
 Redirect /signup /signup.php
