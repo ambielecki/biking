@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteRule "/mtb/fells" "/mtb/fells.php"
+RewriteRule "/login" "/login.php"
+RewriteRule "/signup" "/signup.php"
+RewriteRule "/logout" "/logic/logout_action.php"
+RewriteRule "/road" "/road.php"
+RewriteRule "/meetup" "/meetup.php"
