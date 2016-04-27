@@ -65,7 +65,7 @@ try {
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <span class="attribution">Data from <a href="http://openweathermap.org/">OpenWeatherMap</a> via <a href="https://github.com/cmfcmf/OpenWeatherMap-PHP-Api"> OpenWeatherMap-PHP-Api</a><span>
+                    <span class="attribution">Data from <a href="http://openweathermap.org/">OpenWeatherMap</a> via <a href="https://github.com/cmfcmf/OpenWeatherMap-PHP-Api"> OpenWeatherMap-PHP-Api</a></span>
                 </div>
             </div>
         <?php }else { echo "Weather currently unavailable"; } ?>
