@@ -10,7 +10,7 @@ session_start();?>
     <!DOCTYPE html>
     <html lang="en">
     <?php $title = 'Middlesex Fells'?>
-    <?php $css = ''?>
+    <?php $css = '<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">'?>
     <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/htmlheader.php';?>
     <body class="mtb fells">
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/header.php'; ?>
@@ -51,6 +51,30 @@ session_start();?>
                             <li>Be Mindful of the No Trespassing Areas for the town of Winchester Water Supply</li>
                             <li>Park is open dawn to dusk</li>
                         </ul>
+                        <hr>
+                        <h3>Images From the Fells</h3>
+                        <div class="row">
+                            <div class="col-sm-4 img-responsive">
+                                <a class="fancybox" rel="gallery1" href="/images/fells/fells_1.jpg"><img src="/images/fells/fells_small/fells_1.jpg" title="Boston Skyline From Eastern Fells" alt="Boston Skyline From Eastern Fells"></a>
+                            </div>
+                            <div class="col-sm-4 img-responsive">
+                                <a class="fancybox" rel="gallery1" href="/images/fells/fells_2.jpg"><img src="/images/fells/fells_small/fells_2.jpg" title="Railroad Bridge" alt="Railroad Bridge"></a>
+                            </div>
+                            <div class="col-sm-4 img-responsive">
+                                <a class="fancybox" rel="gallery1" href="/images/fells/fells_3.jpg"><img src="/images/fells/fells_small/fells_3.jpg" title="Fall Colors in the Eastern Fells" alt="Fall Colors in the Eastern Fells"></a>
+                            </div>
+                        </div><br>
+                        <div class="row">
+                            <div class="col-sm-4 img-responsive">
+                                <a class="fancybox" rel="gallery1" href="/images/fells/fells_4.jpg"><img src="/images/fells/fells_small/fells_4.jpg" title="Spot Pond" alt="Spot Pond"></a>
+                            </div>
+                            <div class="col-sm-4 img-responsive">
+                                <a class="fancybox" rel="gallery1" href="/images/fells/fells_5.jpg"><img src="/images/fells/fells_small/fells_5.jpg" title="Boston Skyline from Wright's Tower" alt="Boston Skyline from Wright's Tower"></a>
+                            </div>
+                            <div class="col-sm-4 img-responsive">
+                                <a class="fancybox" rel="gallery1" href="/images/fells/fells_6.jpg"><img src="/images/fells/fells_small/fells_6.jpg" title="Wright's Tower" alt="Wright's Tower"></a>
+                            </div>
+                        </div>
                     </section>
                     <div class="col-sm-4">
                         <div class="row">
@@ -86,6 +110,7 @@ session_start();?>
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAzpAc4TMsByW-AB3RACV6oP58h8-WGYE&callback=initMap">
     </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
     </body>
     </html>
 
