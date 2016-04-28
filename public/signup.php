@@ -4,10 +4,10 @@
 <?php $title = 'Sign Up'?>
 <?php $css = ''?>
 <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/htmlheader.php';?>
-<body>
+<body class="signup ls">
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/header.php'; ?>
     <div class="container-fluid">
-        <div class="row">
+        <div >
             <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/asides/left_aside.php' ?>
             <div class="col-sm-8" id="main_content">
                 <div class="row">

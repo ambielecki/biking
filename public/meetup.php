@@ -20,7 +20,7 @@ if($_SERVER['SERVER_NAME'] == 'biking.loc'){
 <?php $title = 'Biking Around Boston - Meetups'?>
 <?php $css = '<link rel="stylesheet" type="text/css" href="/css/meetup.css">'?>
 <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/htmlheader.php';?>
-<body id="home">
+<body class="meetup events">
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/header.php'; ?>
 <div class="container-fluid" id="content_container">
     <div class="row">
@@ -30,7 +30,7 @@ if($_SERVER['SERVER_NAME'] == 'biking.loc'){
                 <div class="col-sm-12"><h3>Upcoming Meetups</h3></div>
             </div>
             <?php foreach($results as $result){?>
-                <div class="row meetup">
+                <div class="row meetuprow">
                     <div class="col-sm-3">
                         <div class="row">
                             <div class="col-sm-12">Date: <?php echo $result['date']; ?></div>

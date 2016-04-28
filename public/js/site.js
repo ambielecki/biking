@@ -7,8 +7,15 @@ Code from http://totalprogus.blogspot.com.br/2013/12/bootstrap-add-active-class-
  */
 
 $(document).ready(function() {
-    $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
-    console.log(this.location.pathname);
+    //nav active
+    var bodyClasses = document.getElementsByTagName('body')[0].classList;
+    for(var i= 0; i<bodyClasses.length; i++){
+        var active = document.getElementById(bodyClasses[i]);
+        if(active){
+            active.classList.add('active');
+        }
+    }
+
 
     //adds icon to weather report
     if($("#w_precip")){
@@ -35,6 +42,9 @@ $(document).ready(function() {
                 break;
             case "broken clouds":
                 w_class = 'wi-cloud';
+                break;
+            case "few clouds":
+                w_class = 'wi-day-cloudy-high';
                 break;
             default:
                 w_class = 'wi-na';

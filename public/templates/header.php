@@ -38,36 +38,36 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/" id="nav_home">Home</a>
+            <div id="home"><a class="navbar-brand" href="/" id="nav_home">Home</a></div>
         </div><!-- end no collapse area -->
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="llnavbar">
             <!-- collapsable area -->
             <ul class="nav navbar-nav">
-                <li class="dropdown">
+                <li class="dropdown" id="mtb">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mountain Biking <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/mtb/fells/">Middlesex Fells</a></li>
+                        <li id="fells"><a href="/mtb/fells/">Middlesex Fells</a></li>
                         <li><a href="#">Lynn Woods</a></li>
                         <li><a href="#">Willowdale</a></li>
                     </ul>
                 </li>
-                <li><a href="/road">Road Biking</a></li>
-                <li class="dropdown">
+                <li><a href="#">Road Biking</a></li>
+                <li class="dropdown" id="events">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Planned Events</a></li>
-                        <li><a href="/meetup">Meetup / Social</a></li>
+                        <li id="meetup"><a href="/meetup">Meetup / Social</a></li>
                     </ul>
                 </li>
             </ul>
             <?php if(!isset($_SESSION['first_name'])){ ?>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
+                    <li class="dropdown" id="ls">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Log In / Sign Up <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="/login">Log In</a></li>
-                            <li><a href="/signup">Sign Up</a></li>
+                            <li id="login"><a href="/login">Log In</a></li>
+                            <li id="signup"><a href="/signup">Sign Up</a></li>
                         </ul>
                     </li>
                 </ul>

@@ -12,7 +12,7 @@ session_start();?>
     <?php $title = 'Middlesex Fells'?>
     <?php $css = ''?>
     <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/htmlheader.php';?>
-    <body>
+    <body class="mtb fells">
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/header.php'; ?>
     <div class="container-fluid">
         <div class="row">

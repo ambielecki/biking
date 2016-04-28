@@ -87,6 +87,9 @@ footer {
 .navbar-default .navbar-link:hover {
     color: $secondary_text;
 }
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
+    background-color: $secondary_color;
+}
 
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {

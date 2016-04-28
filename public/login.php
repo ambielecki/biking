@@ -4,7 +4,7 @@
 <?php $title = 'Login'?>
 <?php $css = ''?>
 <?php include $_SERVER['DOCUMENT_ROOT'].'/templates/htmlheader.php';?>
-<body id="login">
+<body class="login ls">
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/header.php'; ?>
     <div class="container-fluid">
         <div class="row">
