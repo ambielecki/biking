@@ -46,6 +46,9 @@ $(document).ready(function() {
             case "few clouds":
                 w_class = 'wi-day-cloudy-high';
                 break;
+            case "scattered clouds":
+                w_class = 'wi-day-cloudy-high';
+                break;
             default:
                 w_class = 'wi-na';
                 break;
