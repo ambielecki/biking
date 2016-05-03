@@ -41,7 +41,7 @@ if($_POST){
                 //create the sql query to add a new user in the users table
                 //user levels 0-superAdmin 1-admin 2-confirmed user 3-unconfirmed user
                 $newUser = "INSERT INTO users (first_name, last_name, email, password, level)
-                  VALUES ('$first_name', '$last_name', '$email', '$password', 2)";
+                  VALUES ('$first_name', '$last_name', '$email', '$password', 1)";
 
                 //run the query
                 if(!$db->query($newUser)){
