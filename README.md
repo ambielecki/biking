@@ -13,6 +13,12 @@ A site describing some of the mountain biking and road biking around the North S
 *   Login <http://cscie12.andrewbielecki.me/login.php>
 *   Signup <http://cscie12.andrewbielecki.me/signup.php>
 
+## Login Information
+
+login: test@user.com
+
+pwd: foobarfizzbuzz
+
 ## Page Descriptions
 Home Page - A general description of the site and what to expect. Overall the site is focused on biking opportunities around the North Shore and Metro West, with more of a 
 focus on mountain biking.  Building out the page in the future you would see more mountain pages as well as a page dedicated to road bike routes and such.  The events dropdown currently only 
@@ -22,10 +28,7 @@ On the home page and all other pages you can see the nav, which is from bootstra
 include using a composer package to call on the OpenWeatherMaps API.  There's some JS there to set the icon for the weather, though more cases need to be added to cover all situations. On 
 the right sidebar is a list of relevant links.
 
-Login / Signup pages are implemented with PHP and a MySQL database, with user data stored in php session for later use. The signup page icorporates the jQuery validation plugin.
-
-login: test@user.com
-pwd: foobarfizzbuzz
+Login / Signup Gages - These are implemented with PHP and a MySQL database, with user data stored in php session for later use. The signup page icorporates the jQuery validation plugin.
 
 Middlesex Fells - Under the Mountain Biking Dropdown the Middlesex Fells page is active.  I've included an image of the DCR trail map with a link to the actual pdf. There is also a google map 
 to help people with directions.  Lastly I incorporated a fancybox jquery image gallery.
