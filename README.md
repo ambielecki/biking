@@ -53,12 +53,16 @@ The events page would have been pretty easy to create, but still takes a lot of 
 For user creation I'd like to add some sort of email verification, I'd probably tie that in to the meetup page where unverified users would be able to attend events but not create them. The 
 meetup page also needs the ability to edit meetups you create and to add locations.
 
+The mobile experience / css needs work. Right now I am not loading the background image on mobile / small screens just to save bandwidth.  The forms are currently running over their 
+background on mobile, needs some fiddling. I'm also hiding the weather / links asides on mobile, but I'd like to find a way to incorporate them in a less busy manner. Probably a text only 
+weather piece and a separate page for the links.
+
 ## Lessons Learned
 Styling could use some improvement from the base Bootstrap layouts and forms. The backend validation is pretty weak and would certainly need to be beefed up for a real deployment. 
 The file structure got a little sloppy as I was trying to keep the PHP logic out of the public folder, but that created a lot of layers to get there (while accounting for the different 
 server paths locally and in development).
 
-The biggest thing is that I'd just move the whole thing over to a framework, I'm pretty comfortable with Laravel at this point from CSCI E-15, but I had never built something with 
+The biggest thing is that I'd just move the whole thing over to a framework, I'm pretty comfortable with Laravel at this point from CSCI E15, but I had never built something with 
 straight PHP and wanted the experience. And now that I know, never again.
 
 Through it all my CSS got stronger (which was one of the reasons for taking the course), I pushed into SASS (which works great using PHPStorm to autocompile and using the webhook to compile
@@ -67,7 +71,7 @@ and other things I've code, but I've always shied away from jQuery unless absolu
 
 The meetup page is currently showing all meetups and not just those after today's date, that needs to be added. 
 
-## Know Validation Errors
+## Know Errors
 
 HTML All Pages- Bad Value from Google Fonts loading of fonts - this is Google's syntax
 

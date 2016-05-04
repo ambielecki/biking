@@ -1,4 +1,4 @@
-<div class="col-sm-2">
+<div class="col-sm-2 hidden-sm hidden-xs">
     <aside id="aside_right">
         <h3>Bike Advocacy</h3>
         <ul>
