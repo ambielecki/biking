@@ -24,7 +24,7 @@ pwd: foobarfizzbuzz
 focus on mountain biking.  Building out the page in the future you would see more mountain pages as well as a page dedicated to road bike routes and such.  The events dropdown currently only 
 has the meetup section active, in the future there would be a page dedicated to events such as road races, centuries, meetups from local clubs etc.
 
-On the home page and all other pages you can see the nav, which is from bootstrap with some custom JS to implement an iamhere type feature (including the dropdowns). The left sidebar is a php 
+    On the home page and all other pages you can see the nav, which is from bootstrap with some custom JS to implement an iamhere type feature (including the dropdowns). The left sidebar is a php 
 include using a composer package to call on the OpenWeatherMaps API.  There's some JS there to set the icon for the weather, though more cases need to be added to cover all situations. On 
 the right sidebar is a list of relevant links.
 
