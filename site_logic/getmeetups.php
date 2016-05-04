@@ -82,10 +82,28 @@ if($db->connect_errno) {
                 $thisResult['event_id'] = $query['id'];
                 $thisResult['date'] = date('l, F jS, Y', strtotime($query['date']));
                 $thisResult['time'] = date('gA', strtotime($query['date']));
+                $thisResult['discipline'] = ucfirst($query['discipline']);
+                $thisResult['level'] = ucfirst($query['level']);
                 $thisResult['location'] = $query['name'];
                 $thisResult['address'] = $query['street'].", ".$query['city'].", ".$query['state'].", ".$query['zip'];
                 $thisResult['organizer'] = $query['first_name']." ".$query['last_name'];
                 array_push($results, $thisResult);
+
+                $allLocations = "SELECT locations.id, locations.name
+                                  FROM locations;";
+                if (!$locationQuery = $db->query($allLocations)) {
+                    $_SESSION['flash_error'] = 'There was a problem querying the database, please try again.';
+                    mysqli_close($db);
+                    header("Location: $url");
+                }else{
+                    $displayLocations = [];
+                    foreach($locationQuery as $l){
+                        $thisLocation =[];
+                        $thisLocation['id'] = $l['id'];
+                        $thisLocation['name'] = $l['name'];
+                        array_push($displayLocations, $thisLocation);
+                    }
+                }
             }
         }
     }

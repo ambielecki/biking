@@ -19,6 +19,14 @@ I have not implemented adding new meetups on the meetup page yet, but meetups fr
 login: test@user.com
 pwd: foobarfizzbuzz
 
+## Know Validation Errors
+
+HTML All Pages- Bad Value from Google Fonts loading of fonts - this is Google's syntax
+
+HTML - Middlesex Fells Page - Bad value gallery1 on rel, these errors are produced as a result of the fancybox image viewer
+
+CSS Errors from using Bootstrap
+
 ## Outside code
 
 *   Bootstrap
@@ -68,4 +76,18 @@ pwd: foobarfizzbuzz
 *   Biking Favicon
 
     [Faviconshut](http://www.faviconshut.com)
+    
+*   FancyBox Image Gallery
+    
+    [fancyBox](http://fancyapps.com/fancybox/)
+    
+*   jQuery
+
+    [jQuery](https://jquery.com/)
+    
+*   jQuery Validation
+
+    [jQueryValidation](https://jqueryvalidation.org/)
+    
+    
    
