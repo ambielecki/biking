@@ -33,7 +33,7 @@ Login / Signup Gages - These are implemented with PHP and a MySQL database, with
 Middlesex Fells - Under the Mountain Biking Dropdown the Middlesex Fells page is active.  I've included an image of the DCR trail map with a link to the actual pdf. There is also a google map 
 to help people with directions.  Lastly I incorporated a fancybox jquery image gallery.
 
-Meetups - Under the Events dropdown.  Visitors who are not logged in will only see the upcoming meetups, organizer's name, and by hovering over the bike icon, the name of those attending.  
+Meetups - Under the Events dropdown.  Visitors who are not logged in will only see the upcoming meetups, organizer's name, and by hovering over the bike icon, the name of those attending. 
 This data is generated dynamically through php scripts and a MySQL database.  Logged in users will see a button to either join the ride or say they can no longer attend if they had previously 
 indicated that they were going. They will also see a new tab on the page to add a new meetup. This forms incorporates the jQuery validator as well as a jQuery plugin for date picking. 
 
