@@ -28,7 +28,7 @@ has the meetup section active, in the future there would be a page dedicated to 
 include using a composer package to call on the OpenWeatherMaps API.  There's some JS there to set the icon for the weather, though more cases need to be added to cover all situations. On 
 the right sidebar is a list of relevant links.
 
-*   Login / Signup Gages - These are implemented with PHP and a MySQL database, with user data stored in php session for later use. The signup page icorporates the jQuery validation plugin.
+*   Login / Signup Pages - These are implemented with PHP and a MySQL database, with user data stored in php session for later use. The signup page icorporates the jQuery validation plugin.
 
 *   Middlesex Fells - Under the Mountain Biking Dropdown the Middlesex Fells page is active.  I've included an image of the DCR trail map with a link to the actual pdf. There is also a google map 
 to help people with directions.  Lastly I incorporated a fancybox jquery image gallery.
