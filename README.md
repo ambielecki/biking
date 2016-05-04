@@ -65,6 +65,8 @@ Through it all my CSS got stronger (which was one of the reasons for taking the 
 everything in development when pulling updates with git), and just generally strengthened my knowledge around servers and jQuery (my straight JS was already pretty strong, but I've always 
 shied away from jQuery unless absolutely necessary).  
 
+The meetup page is currently showing all meetups and not just those after today's date, that needs to be added. 
+
 ## Know Validation Errors
 
 HTML All Pages- Bad Value from Google Fonts loading of fonts - this is Google's syntax

@@ -11,12 +11,15 @@ $(document).ready(function() {
         //set the rules
         rules: {
             date:{required:true},
-            time:{required:true},
+            time:{required:true, time12h:true}
         },
         //custom messages
         messages: {
             date: "Please select a date.",
-            time: "Please select a time."
+            time: {
+                required: "Please select a time.",
+                time12h: "Time must be in the format 2:00 PM"
+            }
         }
     });
 });

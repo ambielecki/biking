@@ -134,7 +134,7 @@ if($_SERVER['SERVER_NAME'] == 'biking.loc'){
                             <div class="form-group">
                                 <label for="time" class="col-sm-4 control-label">Time:</label>
                                 <div class="col-sm-7">
-                                    <input type="time" class="form-control" id="time" name="time">
+                                    <input type="text" class="form-control" id="time" name="time" placeholder="12:00 PM">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -174,6 +174,7 @@ if($_SERVER['SERVER_NAME'] == 'biking.loc'){
 <!-- page specific js -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/additional-methods.min.js"></script>
 <script type="text/javascript" src="/js/meetup.js"></script>
 </body>
 </html>

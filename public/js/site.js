@@ -6,6 +6,7 @@
 Code from http://totalprogus.blogspot.com.br/2013/12/bootstrap-add-active-class-to-li.html to add active to li for bootstrap
  */
 
+//modified iamhere code. We have to get the body classes so we can handle dropdowns
 $(document).ready(function() {
     //nav active
     var bodyClasses = document.getElementsByTagName('body')[0].classList;
@@ -15,7 +16,6 @@ $(document).ready(function() {
             active.classList.add('active');
         }
     }
-
 
     //adds icon to weather report
     if($("#w_precip")){
