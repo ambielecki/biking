@@ -4,7 +4,9 @@
 <http://cscie12.andrewbielecki.me>
 
 ## Description
-A site describing some of the mountain biking and road biking around the North Shore and Metro West areas of Boston.
+A site describing some of the mountain biking and road biking around the North Shore and Metro West areas of Boston. The site's goal is to provide information on local mountain biking and 
+road biking opportunities. There is a section dedicated to creating user meetups as well as one implemented page about Middlesex fells and future space for other parks as well as a page 
+dedicated to road biking.
 
 ## Active Pages
 *   Home page <http://cscie12.andrewbielecki.me/>
@@ -19,7 +21,7 @@ login: test@user.com
 
 pwd: foobarfizzbuzz
 
-## Page Descriptions
+## Page Descriptions / Implementation
 *   Home Page - A general description of the site and what to expect. Overall the site is focused on biking opportunities around the North Shore and Metro West, with more of a 
 focus on mountain biking.  Building out the page in the future you would see more mountain pages as well as a page dedicated to road bike routes and such.  The events dropdown currently only 
 has the meetup section active, in the future there would be a page dedicated to events such as road races, centuries, meetups from local clubs etc.
@@ -27,6 +29,8 @@ has the meetup section active, in the future there would be a page dedicated to 
     On the home page and all other pages you can see the nav, which is from bootstrap with some custom JS to implement an iamhere type feature (including the dropdowns). The left sidebar is a php 
 include using a composer package to call on the OpenWeatherMaps API.  There's some JS there to set the icon for the weather, though more cases need to be added to cover all situations. On 
 the right sidebar is a list of relevant links.
+
+    The site is laid out using Bootstrap, including the nav, responsive images, forms, and tabbed interface on the meetup page.
 
 *   Login / Signup Pages - These are implemented with PHP and a MySQL database, with user data stored in php session for later use. The signup page icorporates the jQuery validation plugin.
 
@@ -37,6 +41,26 @@ to help people with directions.  Lastly I incorporated a fancybox jquery image g
 This data is generated dynamically through php scripts and a MySQL database.  Logged in users will see a button to either join the ride or say they can no longer attend if they had previously 
 indicated that they were going. They will also see a new tab on the page to add a new meetup. This forms incorporates the jQuery validator as well as a jQuery plugin for date picking. 
 
+## Future Directions
+There is still plenty of work to be done, obviously more pages need to be added to flesh out the site. Even the built page for Middlesex Fells needs quite a bit of expansion. For a real 
+deployment I would have liked to focus on more information about things like routes for particular rides, waypoints on trails, directions and that sort of things. It would be nice to let 
+users add their own rides or comments as well, maybe even upload their own pictures with some sort of verification.
+
+For road biking I would have built links to cue sheets for rides on a site like RideWithGPS, and include some maps and descriptions of the rides.
+
+The events page would have been pretty easy to create, but still takes a lot of work to track down the information for all the local bike events.
+
+For user creation I'd like to add some sort of email verification, I'd probably tie that in to the meetup page where unverified users would be able to attend events but not create them. The 
+meetup page also needs the ability to edit meetups you create and to add locations.
+
+## Lessons Learned
+Styling could use some improvement from the base Bootstrap layouts and forms. The backend validation is pretty weak and would certainly need to be beefed up for a real deployment. 
+The file structure got a little sloppy as I was trying to keep the PHP logic out of the public folder, but that created a lot of layers to get there (while accounting for the different 
+server paths locally and in development).
+
+The biggest thing is that I'd just move the whole thing over to a framework, I'm pretty comfortable with Laravel at this point from CSCI E-15, but I had never built something with 
+straight PHP and wanted the experience. And now that I know, never again.
+
 ## Know Validation Errors
 
 HTML All Pages- Bad Value from Google Fonts loading of fonts - this is Google's syntax
@@ -44,6 +68,8 @@ HTML All Pages- Bad Value from Google Fonts loading of fonts - this is Google's 
 HTML - Middlesex Fells Page - Bad value gallery1 on rel, these errors are produced as a result of the fancybox image viewer
 
 CSS Errors from using Bootstrap
+
+The header gradient is not compatible with IE, that definitely needs to be fixed.
 
 ## Outside code
 
