@@ -27,12 +27,13 @@ if($_POST['date']&&$_POST['time']&&$_POST['location']&&$_POST['discipline']&&$_P
 
             //successful charset change
         } else {
+            //minimally sanitize db inputs (would need more for a real world app)
             $date = $db->real_escape_string(date_create($_POST['date'].' '.$_POST['time'])->format('Y-m-d H:i:s'));
             $location = $db->real_escape_string($_POST['location']);
             $discipline = $db->real_escape_string($_POST['discipline']);
             $level = $db->real_escape_string($_POST['level']);
             $user = $_SESSION['id'];
-
+            //build the query
             $newMeetUp = "INSERT INTO events (location_id, discipline, level, date, organizer_id)
                   VALUES ('$location', '$discipline', '$level', '$date', '$user')";
             if(!$db->query($newMeetUp)){

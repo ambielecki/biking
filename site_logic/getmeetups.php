@@ -88,7 +88,7 @@ if($db->connect_errno) {
                 $thisResult['address'] = $query['street'].", ".$query['city'].", ".$query['state'].", ".$query['zip'];
                 $thisResult['organizer'] = $query['first_name']." ".$query['last_name'];
                 array_push($results, $thisResult);
-
+                //get locations for the add meetup feature
                 $allLocations = "SELECT locations.id, locations.name
                                   FROM locations;";
                 if (!$locationQuery = $db->query($allLocations)) {

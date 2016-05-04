@@ -6,18 +6,33 @@
 ## Description
 A site describing some of the mountain biking and road biking around the North Shore and Metro West areas of Boston.
 
-## Details
-Login / Signup pages are implemented with PHP and a MySQL database, so that won't work locally unless you want to set up a dbconfig.php 
-(it's not in version control as the setting are different locally and in production) and a MySQL DB (I provided SQL scripts in the zip to setup the tables).
- It's a pretty minimal proof of concept setup. There's some server side validation and sanitization of inputs, but it would require a lot more work before really going live.
-User details are only contained in session variables, I'd need to implement client side cookies and a decent amount of code to make a remember me type function. I also would like to 
-configure usernames for something like this, but in reality I would use a framework to make this app in a real world scenario, and that's a lot of effort to make sure things aren't 
-being duplicated.
+## Active Pages
+*   Home page <http://cscie12.andrewbielecki.me/>
+*   Middlesex Fells <http://cscie12.andrewbielecki.me/mtb/fells.php/>
+*   Meetup Page <http://cscie12.andrewbielecki.me/meetup.php>
+*   Login <http://cscie12.andrewbielecki.me/login.php>
+*   Signup <http://cscie12.andrewbielecki.me/signup.php>
 
-I have not implemented adding new meetups on the meetup page yet, but meetups from the DB are displayed and if a user is logged in they can indicate whether they are interested in going or not.  Just hit the limit of how much php I want to write for interacting with the DB without a framework.
- 
+## Page Descriptions
+Home Page - A general description of the site and what to expect. Overall the site is focused on biking opportunities around the North Shore and Metro West, with more of a 
+focus on mountain biking.  Building out the page in the future you would see more mountain pages as well as a page dedicated to road bike routes and such.  The events dropdown currently only 
+has the meetup section active, in the future there would be a page dedicated to events such as road races, centuries, meetups from local clubs etc.
+
+On the home page and all other pages you can see the nav, which is from bootstrap with some custom JS to implement an iamhere type feature (including the dropdowns). The left sidebar is a php 
+include using a composer package to call on the OpenWeatherMaps API.  There's some JS there to set the icon for the weather, though more cases need to be added to cover all situations. On 
+the right sidebar is a list of relevant links.
+
+Login / Signup pages are implemented with PHP and a MySQL database, with user data stored in php session for later use. The signup page icorporates the jQuery validation plugin.
+
 login: test@user.com
 pwd: foobarfizzbuzz
+
+Middlesex Fells - Under the Mountain Biking Dropdown the Middlesex Fells page is active.  I've included an image of the DCR trail map with a link to the actual pdf. There is also a google map 
+to help people with directions.  Lastly I incorporated a fancybox jquery image gallery.
+
+Meetups - Under the Events dropdown.  Visitors who are not logged in will only see the upcoming meetups, organizer's name, and by hovering over the bike icon, the name of those attending.  
+This data is generated dynamically through php scripts and a MySQL database.  Logged in users will see a button to either join the ride or say they can no longer attend if they had previously 
+indicated that they were going. They will also see a new tab on the page to add a new meetup. This forms incorporates the jQuery validator as well as a jQuery plugin for date picking. 
 
 ## Know Validation Errors
 
@@ -88,6 +103,10 @@ CSS Errors from using Bootstrap
 *   jQuery Validation
 
     [jQueryValidation](https://jqueryvalidation.org/)
+    
+*   jQuery Date Picker
+    [Bootstrap-Datepicker](https://github.com/eternicode/bootstrap-datepicker)
+    
     
     
    
