@@ -61,6 +61,10 @@ server paths locally and in development).
 The biggest thing is that I'd just move the whole thing over to a framework, I'm pretty comfortable with Laravel at this point from CSCI E-15, but I had never built something with 
 straight PHP and wanted the experience. And now that I know, never again.
 
+Through it all my CSS got stronger (which was one of the reasons for taking the course), I pushed into SASS (which works great using PHPStorm to autocompile and using the webhook to compile
+everything in development when pulling updates with git), and just generally strengthened my knowledge around servers and jQuery (my straight JS was already pretty strong, but I've always 
+shied away from jQuery unless absolutely necessary).  
+
 ## Know Validation Errors
 
 HTML All Pages- Bad Value from Google Fonts loading of fonts - this is Google's syntax
