@@ -62,8 +62,8 @@ The biggest thing is that I'd just move the whole thing over to a framework, I'm
 straight PHP and wanted the experience. And now that I know, never again.
 
 Through it all my CSS got stronger (which was one of the reasons for taking the course), I pushed into SASS (which works great using PHPStorm to autocompile and using the webhook to compile
-everything in development when pulling updates with git), and just generally strengthened my knowledge around servers and jQuery (my straight JS was already pretty strong, but I've always 
-shied away from jQuery unless absolutely necessary).  
+everything in development when pulling updates with git), and just generally strengthened my knowledge around servers and jQuery (my straight JS was already pretty strong from CSCI E3 
+and other things I've code, but I've always shied away from jQuery unless absolutely necessary).  
 
 The meetup page is currently showing all meetups and not just those after today's date, that needs to be added. 
 

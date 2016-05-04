@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cmfcmf/OpenWeatherMap-PHP-Api.git",
-                "reference": "fa3f4f7df368ea50175d823fd4a4d4fe75d05841"
+                "reference": "a196e7e94ae5d8681862d25324961e79ed09840c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cmfcmf/OpenWeatherMap-PHP-Api/zipball/fa3f4f7df368ea50175d823fd4a4d4fe75d05841",
-                "reference": "fa3f4f7df368ea50175d823fd4a4d4fe75d05841",
+                "url": "https://api.github.com/repos/cmfcmf/OpenWeatherMap-PHP-Api/zipball/a196e7e94ae5d8681862d25324961e79ed09840c",
+                "reference": "a196e7e94ae5d8681862d25324961e79ed09840c",
                 "shasum": ""
             },
             "require": {
@@ -26,8 +26,8 @@
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "Cmfcmf\\": ""
+                "psr-4": {
+                    "Cmfcmf\\": "Cmfcmf"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -49,7 +49,7 @@
                 "weather",
                 "weather api"
             ],
-            "time": "2016-03-24 09:37:53"
+            "time": "2016-05-01 08:06:01"
         }
     ],
     "packages-dev": [],
