@@ -99,69 +99,71 @@ if($_SERVER['SERVER_NAME'] == 'biking.loc'){
                         <div class="col-sm-12"><h3>Create A New Meetup</h3></div>
                     </div>
                     <div class="row meetuprow">
-                        <form class="form-horizontal" method="post" action="/logic/add_meetup.php" id="add_meetup_form">
-                            <div class="form-group">
-                                <label for="discipline" class="col-sm-4 control-label">Discipline:</label>
-                                <div class="col-sm-7">
-                                    <select class="form-control" name="discipline" id="discipline">
-                                        <option value="mountain">Mountain</option>
-                                        <option value="road">Road</option>
-                                        <option value="cross country">Cross Country</option>
-                                    </select>
+                        <div class="col-sm-12">
+                            <form class="form-horizontal" method="post" action="/logic/add_meetup.php" id="add_meetup_form">
+                                <div class="form-group">
+                                    <label for="discipline" class="col-sm-4 control-label">Discipline:</label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" name="discipline" id="discipline">
+                                            <option value="mountain">Mountain</option>
+                                            <option value="road">Road</option>
+                                            <option value="cross country">Cross Country</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="level" class="col-sm-4 control-label">Skill Level:</label>
-                                <div class="col-sm-7">
-                                    <select class="form-control" name="level" id="level">
-                                        <option value="beginner">Beginner</option>
-                                        <option value="intermediate">Intermediate</option>
-                                        <option value="expert">Expert</option>
-                                    </select>
+                                <div class="form-group">
+                                    <label for="level" class="col-sm-4 control-label">Skill Level:</label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" name="level" id="level">
+                                            <option value="beginner">Beginner</option>
+                                            <option value="intermediate">Intermediate</option>
+                                            <option value="expert">Expert</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="date" class="col-sm-4 control-label">Date:</label>
-                                <div class="col-sm-7">
-                                    <div class="input-group date" data-provide="datepicker">
-                                        <input type="text" class="form-control" name="date" id="date">
-                                        <div class="input-group-addon">
-                                            <span class="glyphicon glyphicon-th"></span>
+                                <div class="form-group">
+                                    <label for="date" class="col-sm-4 control-label">Date:</label>
+                                    <div class="col-sm-7">
+                                        <div class="input-group date" data-provide="datepicker">
+                                            <input type="text" class="form-control" name="date" id="date">
+                                            <div class="input-group-addon">
+                                                <span class="glyphicon glyphicon-th"></span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="time" class="col-sm-4 control-label">Time:</label>
-                                <div class="col-sm-7">
-                                    <input type="text" class="form-control" id="time" name="time" placeholder="12:00 PM">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="location" class="col-sm-4 control-label">Location:</label>
-                                <div class="col-sm-7">
-                                    <select class="form-control" name="location" id="location">
-                                        <?php foreach($displayLocations as $display){ ?>
-                                            <option value="<?php echo($display['id'])?>"><?php echo($display['name'])?></option>
-                                        <?php } ?>
-                                    </select>
-                                </div>
-                            </div>
-                            <?php if(isset($_SESSION['formWarning'])){?>
-                                <div class="row">
-                                    <div class="col-sm-offset-4 col-sm-8">
-                                        <span>Please ensure all fields are filled.</span>
+                                <div class="form-group">
+                                    <label for="time" class="col-sm-4 control-label">Time:</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="time" name="time" placeholder="12:00 PM">
                                     </div>
                                 </div>
-                            <?php }
-                            unset($_SESSION['formWarning']);
-                            ?>
-                            <div class="form-group">
-                                <div class="col-sm-offset-4 col-sm-8">
-                                    <button type="submit" class="btn btn-default">Create Meetup!</button>
+                                <div class="form-group">
+                                    <label for="location" class="col-sm-4 control-label">Location:</label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" name="location" id="location">
+                                            <?php foreach($displayLocations as $display){ ?>
+                                                <option value="<?php echo($display['id'])?>"><?php echo($display['name'])?></option>
+                                            <?php } ?>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                        </form>
+                                <?php if(isset($_SESSION['formWarning'])){?>
+                                    <div class="row">
+                                        <div class="col-sm-offset-4 col-sm-8">
+                                            <span>Please ensure all fields are filled.</span>
+                                        </div>
+                                    </div>
+                                <?php }
+                                unset($_SESSION['formWarning']);
+                                ?>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-4 col-sm-8">
+                                        <button type="submit" class="btn btn-default">Create Meetup!</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <?php } ?>
