@@ -53,9 +53,8 @@ The events page would have been pretty easy to create, but still takes a lot of 
 For user creation I'd like to add some sort of email verification, I'd probably tie that in to the meetup page where unverified users would be able to attend events but not create them. The 
 meetup page also needs the ability to edit meetups you create and to add locations.
 
-The mobile experience / css needs work. Right now I am not loading the background image on mobile / small screens just to save bandwidth.  The forms are currently running over their 
-background on mobile, needs some fiddling. I'm also hiding the weather / links asides on mobile, but I'd like to find a way to incorporate them in a less busy manner. Probably a text only 
-weather piece and a separate page for the links.
+The mobile experience / css needs work. Right now I am not loading the background image on mobile / small screens just to save bandwidth.  I'm also hiding the weather / links 
+asides on mobile, but I'd like to find a way to incorporate them in a less busy manner. Probably a text only weather piece and a separate page for the links.
 
 ## Lessons Learned
 Styling could use some improvement from the base Bootstrap layouts and forms. The backend validation is pretty weak and would certainly need to be beefed up for a real deployment. 
