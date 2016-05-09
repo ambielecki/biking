@@ -1,6 +1,19 @@
 Options +FollowSymLinks
 RewriteEngine On
 
+ExpiresActive On
+ExpiresByType image/jpg A604800
+ExpiresByType image/gif A604800
+ExpiresByType image/png A604800
+ExpiresByType text/html A604800
+ExpiresByType text/javascript A604800
+ExpiresByType text/css A604800
+
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/javascript
+
 Redirect /mtb/fells /mtb/fells.php
 Redirect /login /login.php
 Redirect /signup /signup.php
