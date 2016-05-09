@@ -80,6 +80,8 @@ CSS Errors from using Bootstrap
 
 The header gradient is not compatible with IE, that definitely needs to be fixed.
 
+htaccess - Had trouble getting the file caching to work, my guess is this has to do with my server config, which I'm using for multiple projects. Something I need to dig into in the vhosts
+
 ## Outside code
 
 *   Bootstrap
