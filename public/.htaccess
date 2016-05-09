@@ -1,4 +1,5 @@
 Options +FollowSymLinks
+RewriteBase /
 RewriteEngine On
 
 Redirect /mtb/fells /mtb/fells.php
@@ -7,3 +8,7 @@ Redirect /signup /signup.php
 Redirect /logout /logic/logout_action.php
 Redirect /road /road.php
 Redirect /meetup /meetup.php
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
