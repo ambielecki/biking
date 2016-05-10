@@ -28,7 +28,7 @@ if ($_POST) {
                 $email = $db->real_escape_string($_POST['email']);
                 $password = $db->real_escape_string($_POST['password']);
 
-                //create the sql query to add a new user in the users table
+                //create the sql query to get the user
                 $checkUser = "SELECT id, first_name, last_name, email, password FROM users where email= '$email' LIMIT 1";
 
                 //run the query

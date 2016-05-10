@@ -10,6 +10,7 @@ if($_POST){
     //set url for redirect
     $url = 'http://'.$_SERVER['SERVER_NAME'];
     $signup = $url.'/signup';
+    $login = $url.'/login';
 
     if($_POST['first_name']&&$_POST['last_name']&&$_POST['email']&&$_POST['password']&&($_POST['password']===$_POST['password_confirmation'])){
 
@@ -50,17 +51,27 @@ if($_POST){
                     $_SESSION['flash_error'] = 'That email has already been signed up, please select another.';
                     mysqli_close($db);
                     header("Location: $signup");
-                }else{
-                    //close db connection
-                    mysqli_close($db);
+                }else {
+                    $getUser = "SELECT id, first_name, last_name, email, password FROM users where email= '$email' LIMIT 1";
+                    //run the query
+                    if (!$getUser = $db->query($getUser)) {
+                        //Query fails, flash message ad return to login page
+                        $_SESSION['flash_error'] = 'You have been signed up, but there was a problem signing you in, please try again.';
+                        mysqli_close($db);
+                        header("Location: $login");
+                    } else {
+                        mysqli_close($db);
+                        $row = $getUser->fetch_assoc();
 
-                    //set session variables
-                    $_SESSION['first_name'] = $first_name;
-                    $_SESSION['last_name'] = $last_name;
-                    $_SESSION['email'] = $email;
-                    $_SESSION['flash'] = 'Thank you for signing up, you are now logged in.';
-                    //set the new header to go back to the homepage after signing up
-                    header("Location: $url");
+                        //set session variables
+                        $_SESSION['first_name'] = $row['first_name'];
+                        $_SESSION['last_name'] = $row['last_name'];
+                        $_SESSION['email'] = $row['email'];
+                        $_SESSION['id'] = $row['id'];
+                        $_SESSION['flash'] = 'Thank you for signing up, you are now logged in.';
+                        //set the new header to go back to the homepage after signing up
+                        header("Location: $url");
+                    }
                 }
             }//close successful charset change
         }//close successful db open
