@@ -70,7 +70,7 @@ and other things I've code, but I've always shied away from jQuery unless absolu
 
 The meetup page is currently showing all meetups and not just those after today's date, that needs to be added. 
 
-## Know Errors
+## Known Errors
 
 HTML All Pages- Bad Value from Google Fonts loading of fonts - this is Google's syntax
 
