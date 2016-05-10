@@ -146,6 +146,7 @@ configurations. Definitely something for later.
     [jQueryValidation](https://jqueryvalidation.org/)
     
 *   jQuery Date Picker
+
     [Bootstrap-Datepicker](https://github.com/eternicode/bootstrap-datepicker)
     
     
